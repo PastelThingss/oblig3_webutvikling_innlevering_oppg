@@ -1,9 +1,124 @@
 *{
     body{
-        background-color: palevioletred;
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(252, 234, 212);
+        font-family:Arial, Helvetica, sans-serif;
+        
     }
     h1{
         text-decoration: underline;
+    }
+}
+
+#grid-container{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header, main, footer{
+    padding: 1rem;
+}
+
+header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#logo{
+    text-decoration: none;
+}
+
+.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.responsive a{
+    color: aliceblue;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.black-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: aquamarine;
+    color: brown;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+main{
+    grid-area: main;
+}
+
+main section img{
+    width: 100%;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#services h2{
+    width: 100%;
+    text-align: center;
+}
+
+#services article{
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+@media only screen and (min-width: 600px){
+    #grid-container{
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    #ham, .fa-magnifying-glass{
+        display: none;
+    }
+
+    .flex-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-section img{
+        width: 50%;
+    }
+
+    .flex-section section{
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+    .right img{
+        order: 1;
     }
 }
