@@ -4,17 +4,16 @@
         font-family: 'Open Sans', sans-serif;
         font-family: 'Roboto', sans-serif;
         font-family: 'Tilt Neon', sans-serif;
-        
-    }
-    h1{
+      }
+      
+      h1{
         text-decoration: underline;
-    }
-}
-
-#grid-container{
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-}
+      }
+      
+      #grid-container{
+        display: grid;
+        grid-template-areas: "header" "main" "footer";
+      }   
 
 header, main, footer{
     padding: 1rem;
@@ -88,7 +87,7 @@ footer{
     min-width: 200px;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
     #grid-container{
         grid-template-areas: "header header header" "main main main" "footer footer footer";
     }
