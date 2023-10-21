@@ -57,8 +57,8 @@ header nav{
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
-    background-color: aquamarine;
-    color: brown;
+    background-color: rgb(191, 212, 205);
+    color: rgb(12, 11, 11);
     border-radius: 5px;
     font-weight: 400;
 }
@@ -99,9 +99,9 @@ footer{
         margin: 0;
     }
 
-    #ham, .fa-magnifying-glass{
+   /* #ham, .fa-magnifying-glass{
         display: none;
-    }
+    }*/
 
     .flex-section{
         display: flex;
