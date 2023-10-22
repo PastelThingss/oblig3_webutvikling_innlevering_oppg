@@ -9,6 +9,11 @@ h1{
     text-decoration: underline;
 }
 
+#display: grid;
+grid-template-colums: 1fr;
+grid-template_rows: repeat(4, auto);
+grid-template-areas:
+
 #grid-container{
 display: grid;
 grid-template-areas: "header" "main" "footer";
